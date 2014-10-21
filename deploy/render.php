@@ -5,13 +5,13 @@ if (!isset($var1) or $var1 == '') {
 } else {
 ?>
 
-<script type="text/javascript" src="plugins/analytics_dashboard/assets/js/platform.js"></script>
+<script type="text/javascript" src="plugins/respond_analytics_dashboard/assets/js/platform.js"></script>
 
-<link rel="import" href="plugins/analytics_dashboard/elements/ga-auth.html">
-<link rel="import" href="plugins/analytics_dashboard/elements/ga-dashboard.html">
-<link rel="import" href="plugins/analytics_dashboard/elements/ga-chart.html">
-<link rel="import" href="plugins/analytics_dashboard/elements/ga-viewpicker.html">
-<link rel="import" href="plugins/analytics_dashboard/elements/ga-datepicker.html">
+<link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-auth.html">
+<link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-dashboard.html">
+<link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-chart.html">
+<link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-viewpicker.html">
+<link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-datepicker.html">
 
 <iframe id="logoutframe" data-src="https://accounts.google.com/logout" src="about:blank" style="display: none"></iframe>
 
