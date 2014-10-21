@@ -6,7 +6,7 @@ if (!isset($var1) or $var1 == '') {
 } else {
 ?>
 
-<!-- Imports - don't modify this! This includes the Google API for Analytics -->
+<!-- Imports - This includes the Google API for Analytics -->
 <script type="text/javascript" src="plugins/respond_analytics_dashboard/assets/js/platform.js"></script>
 
 <link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-auth.html">
