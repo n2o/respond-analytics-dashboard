@@ -1,6 +1,6 @@
 {
-  "analytics_dashboard":{
-    "type":"analytics_dashboard",
+  "respond_analytics_dashboard":{
+    "type":"respond_analytics_dashboard",
     "name":"Analytics Dashboard",
     "desc":"A Dashboard for Google Analytics. Requires to define the ClientID",
     "render":"runtime",

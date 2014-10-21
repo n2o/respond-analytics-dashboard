@@ -3,8 +3,8 @@ if(typeof plugin == "undefined" || !plugin) {
 	var plugin = {};
 }
 
-// the type of plugin must match the JS singleton (e.g. analytics_dashboard) name
-plugin.analytics_dashboard = {
+// the type of plugin must match the JS singleton (e.g. respond_analytics_dashboard) name
+plugin.respond_analytics_dashboard = {
 
 	showUpdate:true, // shows/hides the submit button
 	pageUniqId:null,
@@ -13,10 +13,10 @@ plugin.analytics_dashboard = {
 	// initialize plugin
 	init:function(pageUniqId, pluginUniqId){
 
-		plugin.analytics_dashboard.pageUniqId = pageUniqId;
-		plugin.analytics_dashboard.pluginUniqId = pluginUniqId;
+		plugin.respond_analytics_dashboard.pageUniqId = pageUniqId;
+		plugin.respond_analytics_dashboard.pluginUniqId = pluginUniqId;
 
-		$('#analytics_dashboard-var1').val($('#'+plugin.analytics_dashboard.pluginUniqId).data('var1'));
+		$('#respond_analytics_dashboard-var1').val($('#'+plugin.respond_analytics_dashboard.pluginUniqId).data('var1'));
 
 	},
 
@@ -24,7 +24,7 @@ plugin.analytics_dashboard = {
 	update:function(el){
 
 		// an easy way to pass data to your plugin is to set data-[var] attributes
-		$('#'+plugin.analytics_dashboard.pluginUniqId).data('var1', $('#analytics_dashboard-var1').val());
+		$('#'+plugin.respond_analytics_dashboard.pluginUniqId).data('var1', $('#respond_analytics_dashboard-var1').val());
 
 		// show a success message when you are done
 		message.showMessage('success', 'Plugin updated successfully');
