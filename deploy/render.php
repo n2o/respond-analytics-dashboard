@@ -1,10 +1,12 @@
 <?php
+# Get Google Client ID from Admin Panel
 if (!isset($var1) or $var1 == '') {
   echo $var1;
-  echo "Please define the Google ClientID in the Admin Panel.";
+  echo "Please define the Google Client ID in the Admin Panel.";
 } else {
 ?>
 
+<!-- Imports - don't modify this! This includes the Google API for Analytics -->
 <script type="text/javascript" src="plugins/respond_analytics_dashboard/assets/js/platform.js"></script>
 
 <link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-auth.html">
@@ -13,8 +15,10 @@ if (!isset($var1) or $var1 == '') {
 <link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-viewpicker.html">
 <link rel="import" href="plugins/respond_analytics_dashboard/elements/ga-datepicker.html">
 
+<!-- Logout from Google -->
 <iframe id="logoutframe" data-src="https://accounts.google.com/logout" src="about:blank" style="display: none"></iframe>
 
+<!-- Show OAuth Button -->
 <div>
   <ga-auth clientid="<?php echo $var1; ?>"></ga-auth>
 </div>
