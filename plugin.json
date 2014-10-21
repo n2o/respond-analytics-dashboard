@@ -2,7 +2,7 @@
   "respond_analytics_dashboard":{
     "type":"respond_analytics_dashboard",
     "name":"Analytics Dashboard",
-    "desc":"A Dashboard for Google Analytics. Requires to define the ClientID",
+    "desc":"A Dashboard for Google Analytics. Requires to define the Client ID from https://console.developers.google.com.",
     "render":"runtime",
     "config":"true"
   }
